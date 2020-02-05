@@ -13,15 +13,19 @@ public class MainActivity extends AppCompatActivity {
 
     public void cickFxn(View view) {
         EditText myTextField = (EditText) findViewById(R.id.myTextField);
-        String str = myTextField.getText().toString();
-        goToActivity2(str);
+        Double dollars = Double.parseDouble(myTextField.getText().toString());
+
+        // 1 dollar = 0.77 pounds
+        Double pounds = dollars * 0.77;
+
+        goToActivity2(pounds);
 
         //Toast.makeText(MainActivity.this, myTextField.getText().toString(), Toast.LENGTH_SHORT).show();
     }
 
-    public void goToActivity2(String s) {
+    public void goToActivity2(Double d) {
         Intent intent = new Intent(this, Main2Activity.class);
-        intent.putExtra("message", s);
+        intent.putExtra("pounds", d);
         startActivity(intent);
 
     }

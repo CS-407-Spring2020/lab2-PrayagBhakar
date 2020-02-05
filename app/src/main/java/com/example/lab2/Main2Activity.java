@@ -17,7 +17,7 @@ public class Main2Activity extends AppCompatActivity {
 
         textView2 = (TextView) findViewById(R.id.textView2);
         Intent intent = getIntent();
-        String str = intent.getStringExtra("message");
-        textView2.setText("Hello " + str);
+        Double pounds = intent.getDoubleExtra("pounds", -1.0);
+        textView2.setText("£ " + pounds.toString());
     }
 }

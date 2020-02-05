@@ -1,4 +1,8 @@
 <resources>
-    <string name="app_name">Lab2</string>
+    <string name="app_name">Currency Converter</string>
     <string name="textview">TextView</string>
+    <string name="click_me">Convert</string>
+    <string name="button_demo">Currency Converter</string>
+    <string name="enter_your_name">Enter Amount in Dollars</string>
+    <string name="currency_exchange">Currency Exange</string>
 </resources>
